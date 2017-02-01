@@ -4,8 +4,12 @@ function Mostar()
 {
 	
 
-	var person = prompt("ingresar numero de cuenta", "numero de cuenta correcto");
+	var respuesta = prompt("mensaje","texto ingresado por defecto");
+
+	var a;
+	a = prompt("ingresar un numero:","1");
+	console.log("el usuario ingreso:"+a);
 	
-	alert("cuenta");
+
 }
 
