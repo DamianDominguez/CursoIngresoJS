@@ -5,7 +5,47 @@ function Mostrar()
 de cada una de estas cifras, repetir la iteracion para lanzar el random 100.000 veces
 e informar: 1) la cantidad de veces que salio cada numero del 0 al 10, 
 2) el porcentaje de veces que salio cada numero con respecto al total*/
+
+var numerorecorrido;
 var numeroingresado;
+var numeroanterior;
+var tienedivisor ="No";
+
+numeroingresado = prompt("Ingrese Numero");
+numeroingresado = parseInt(numeroingresado);
+
+//for(numeroingresado =2; numeroanterior<(numeroingresado /2); numeroanterior++)//
+for(numerorecorrido = numeroingresado-1; numerorecorrido>2; numerorecorrido--)
+{
+	tienedivisor = "No";
+	for(numeroanterior =2; numeroanterior<(numerorecorrido/2); numeroanterior++)
+	{
+		if(numerorecorrido % numeroanterior ==0)
+		{
+			tienedivisor = "Si";
+			break;
+		}
+	}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var numeroingresado;
 var numeroanterior;
 var tienedivisor;
 
@@ -21,4 +61,4 @@ for(numeroanterior=2 ; numeroanterior<(numeroingresado /2); numeroanterior++)
 	}
 }
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
